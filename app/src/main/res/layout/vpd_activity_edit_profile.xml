@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".vuphatdat.activity.EditProfileActivity"
+    >
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:orientation="horizontal"
+        android:background="@drawable/primary_color_background"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_large"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:textColor="@color/white"/>
+    </TableRow>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="180px">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_weight="1"
+                android:textSize="@dimen/label_large"/>
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="@dimen/content_large"
+                android:hint="Enter your name"
+                android:layout_weight="2"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px">
+
+            <TextView
+                android:id="@+id/txtDob"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Date of birth"
+
+                android:textSize="@dimen/label_large"/>
+
+            <EditText
+                android:id="@+id/txtDate"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/btnDate"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/date"
+
+                />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/txtGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="@dimen/label_large"
+            android:layout_marginTop="20px"/>
+
+        <RadioGroup
+            android:id="@+id/radGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radMale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/label_medium"
+                android:text="Male"
+                android:layout_marginLeft="100px"
+                />
+
+            <RadioButton
+                android:id="@+id/radFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="@dimen/label_medium"
+                android:layout_marginLeft="200px"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtDisease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Underlying Diseases"
+            android:textSize="@dimen/label_large"
+            android:layout_marginTop="20px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:textSize="@dimen/content_large"
+                android:text="Fatigue" />
+
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:textSize="@dimen/content_large"
+                android:text="High blood pressure" />
+
+            <CheckBox
+                android:id="@+id/cb3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:textSize="@dimen/content_large"
+                android:text="Diabetes" />
+
+            <CheckBox
+                android:id="@+id/cb4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:textSize="@dimen/content_large"
+                android:text="Metal illness" />
+
+            <CheckBox
+                android:id="@+id/cbNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:textSize="@dimen/content_large"
+                android:text="No underlying diseases" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:text="Save"
+            android:backgroundTint="@color/accent_color"/>
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:text="Exit"
+            android:backgroundTint="@color/accent_color"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

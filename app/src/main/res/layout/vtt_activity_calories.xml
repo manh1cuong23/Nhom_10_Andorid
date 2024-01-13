@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".vutungtam.activity.CaloriesActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/primary_color_background">
+
+        <include
+            layout="@layout/cm_button_back"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:textSize="@dimen/title_large"
+            android:textColor="@color/white"/>
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add Sample"
+        android:gravity="center"
+        android:textSize="@dimen/label_large"
+        android:layout_marginBottom="20dp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/table_background"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:stretchColumns="*">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories intake: "
+            android:textSize="@dimen/label_large"/>
+
+        <EditText
+            android:id="@+id/edtIntake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Kcal"
+            android:inputType="number"
+            android:textSize="@dimen/content_large"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/label_large"
+            android:text="Calories burned: " />
+
+        <EditText
+            android:id="@+id/edtBurned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Kcal"
+            android:inputType="number"
+            android:textSize="@dimen/content_large"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Date: "
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/label_large" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="150dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="@dimen/content_large"
+            android:text="Now" />
+
+        <ImageButton
+            android:id="@+id/imgDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/date" />
+    </TableRow>
+    </TableLayout>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:backgroundTint="@color/accent_color"
+            android:layout_weight="1"
+            android:textSize="@dimen/label_large"/>
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List"
+            android:backgroundTint="@color/accent_color"
+            android:layout_weight="1"
+            android:textSize="@dimen/label_large"/>
+    </TableRow>
+</LinearLayout>

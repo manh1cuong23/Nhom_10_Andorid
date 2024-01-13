@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuItemProfile"
+            android:icon="@drawable/profile"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/menuItemRemindWater"
+            android:icon="@drawable/remind_water"
+            android:title="Remind Water"/>
+        <item
+            android:id="@+id/menuItemPassword"
+            android:icon="@drawable/change_password"
+            android:title="Change Password"/>
+        <item
+            android:id="@+id/menuItemLogout"
+            android:icon="@drawable/logout"
+            android:title="Log out"/>
+    </group>
+</menu>

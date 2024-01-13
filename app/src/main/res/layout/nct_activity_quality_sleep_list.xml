@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".nguyencongtiep.activity.QualitySleepListActivity">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/primary_color_background">
+
+        <include
+            layout="@layout/cm_button_back"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quality Sleep"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:textSize="@dimen/title_large"
+            android:textColor="@color/white"/>
+
+    </TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="List quality sleep"
+        android:textSize="@dimen/label_large"
+        android:layout_marginBottom="10dp"
+        android:gravity="center" />
+
+    <ListView
+        android:id="@+id/lvQuality"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_list" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/accent_color"
+            android:layout_weight="1"
+            android:textSize="@dimen/label_large"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/accent_color"
+            android:layout_weight="1"
+            android:textSize="@dimen/label_large"
+            android:text="Remove" />
+    </TableRow>
+
+
+</LinearLayout>

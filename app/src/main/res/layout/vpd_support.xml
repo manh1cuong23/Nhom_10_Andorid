@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="40px"
+        >
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How to use: "
+            android:textStyle="bold"
+            android:textSize="@dimen/label_large"
+            />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:textSize="@dimen/content_large"
+            android:text="1. Click the plus button in the lower right corner of the screen. After that, the form will appear and ask to enter information related to the exercise plan" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:textSize="@dimen/content_large"
+            android:text="2. To edit an exercise plan, please click on that exercise plan on the screen, then a form will appear with information about the current execution plan, edit the form, click the OK button to save, press the Exit button to cancel" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:textSize="@dimen/content_large"
+            android:text="3. To delete any exercise plan, press and hold on that exercise plane on the screen, the system displays a request to confirm deletion. Press OK to delete, press Cancel to exit" />
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: "
+            android:textStyle="bold"
+            android:textSize="@dimen/label_large"
+            />
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:textSize="@dimen/content_large"
+            android:textColor="@color/red"
+            android:text="1. When creating or editing an exercise plan, all information on the form must be entered and cannot be left blank" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:textSize="@dimen/content_large"
+            android:textColor="@color/red"
+            android:text="2. The information entered on the form must be in the correct format. If you do not enter the correct format, when you click ok, the form will disappear and the exercise plan will not be created or edited" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

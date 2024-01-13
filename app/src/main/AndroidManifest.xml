@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/img"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/img"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication2"
+        tools:targetApi="31">
+        <activity
+            android:name=".common.activity.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".common.activity.RegisterActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".common.activity.MainActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".lequydo.activity.BMIIndexActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lequydo.activity.BMIIndexListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lequydo.activity.HeartHealthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lequydo.activity.HeartHealthListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vutungtam.activity.CaloriesListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vutungtam.activity.CaloriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nguyencongtiep.activity.RemindWaterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nguyencongtiep.activity.QualitySleepListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nguyencongtiep.activity.QualitySleepActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vutungtam.statistic.CaloriesStatistic"
+            android:exported="false" />
+        <activity
+            android:name=".vutungtam.statistic.BMIIndexStatisticActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vutungtam.statistic.ExercisePlanStatistic"
+            android:exported="false" />
+        <activity
+            android:name=".vutungtam.statistic.QualitySleepStatisticActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vutungtam.activity.HealthStatisticActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".common.activity.ChangePasswordActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".vutungtam.statistic.HeartHealthStatisticActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vuphatdat.activity.ExercisePlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vuphatdat.activity.CreateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vuphatdat.activity.ShowProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vuphatdat.activity.EditProfileActivity"
+            android:exported="false" />
+        <receiver
+            android:name=".nguyencongtiep.receiver.ReminderReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

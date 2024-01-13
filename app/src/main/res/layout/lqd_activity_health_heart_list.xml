@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".lequydo.activity.HeartHealthListActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:orientation="horizontal"
+        android:background="@drawable/primary_color_background">
+        <include
+            layout="@layout/cm_button_back"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heart Health"
+            android:textAlignment="center"
+            android:textSize="@dimen/title_large"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:textColor="@color/white"/>
+    </TableRow>
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List heart health:"
+        android:textAlignment="center"
+        android:textSize="@dimen/label_large"/>
+
+    <ListView
+        android:id="@+id/lvHH"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_list"
+        android:choiceMode="singleChoice" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20sp">
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:backgroundTint="@color/accent_color"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:backgroundTint="@color/accent_color"
+            android:layout_weight="1"/>
+    </TableRow>
+</LinearLayout>

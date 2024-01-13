@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".nguyencongtiep.activity.RemindWaterActivity" >
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/primary_color_background">
+
+        <include
+            layout="@layout/cm_button_back"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remind Water"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:textSize="@dimen/title_large"
+            android:textColor="@color/white"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/label_large"
+            android:text="Drink target: " />
+
+        <TextView
+            android:id="@+id/tvTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/label_medium"
+            android:hint="totalCon/target ml"
+            />
+    </TableRow>
+
+    <ProgressBar
+        android:id="@+id/progressDrinkW"
+        android:progressDrawable="@drawable/custom_progressbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:progress="0"
+        android:padding="5dp"/>
+
+    <ListView
+        android:id="@+id/lvWater"
+        android:layout_width="match_parent"
+        android:layout_height="462dp"
+        android:layout_marginTop="10dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/imgCreate"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:src="@drawable/add" />
+
+        <ImageButton
+            android:id="@+id/imgUpdate"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_edit_notifications" />
+    </TableRow>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vuphatdat.activity.ShowProfileActivity">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/primary_color_background"
+        tools:ignore="MissingConstraints">
+
+        <include
+            layout="@layout/cm_button_back"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Information"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/title_large"
+            android:textColor="@color/white"/>
+
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="300px"
+        android:layout_marginLeft="10sp">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:gravity="center"
+            android:textSize="@dimen/title_large" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full name: "
+            android:textSize="@dimen/label_large"/>
+
+        <TextView
+            android:id="@+id/txtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/content_large"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="10px"/>
+
+        <TextView
+            android:id="@+id/txtDater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of birth: "
+            android:textSize="@dimen/label_large"/>
+
+        <TextView
+            android:id="@+id/txtDateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/content_large"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="10px"/>
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender: "
+            android:textSize="@dimen/label_large"/>
+
+        <TextView
+            android:id="@+id/txtSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="100px"
+            android:textSize="@dimen/content_large"
+            android:layout_marginTop="10px"/>
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Underlying diseases:"
+            android:textSize="@dimen/label_large"/>
+
+        <TextView
+            android:id="@+id/txtDiseases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/content_large"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="10px"/>
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit profile"
+            android:backgroundTint="@color/accent_color"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

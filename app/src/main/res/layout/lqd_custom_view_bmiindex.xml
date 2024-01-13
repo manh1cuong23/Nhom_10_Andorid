@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_list_color"
+    >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="Height:"
+            android:textSize="@dimen/content_large"
+            android:layout_marginLeft="2dp"/>
+        <TextView
+            android:id="@+id/txtHeight"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Height"
+            android:textSize="@dimen/content_large" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="Status:"
+            android:textSize="@dimen/content_large" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:hint="Status"
+            android:textSize="@dimen/content_large" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="Weight:"
+            android:textSize="@dimen/content_large" />
+
+        <TextView
+            android:id="@+id/txtWeight"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Weight"
+
+            android:textSize="@dimen/content_large" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textSize="@dimen/content_large"
+            android:layout_marginLeft="2dp"/>
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:textSize="@dimen/content_large"/>
+    </TableRow>
+
+
+</LinearLayout>
